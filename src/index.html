@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+<body>
+
+    <div align="center">
+        <a href="https://github.com/webpack/webpack">
+            <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
+        </a>
+        <h1>Webpack Template</h1>
+        <p>
+            Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
+        </p>
+    </div>
+
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
+</body>
+</html>
