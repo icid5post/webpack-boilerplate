@@ -5,13 +5,13 @@ Webpack 4 template.  sass / css / postcss (autoprefixer &amp; css-nano &amp; css
 
 ``` bash
 # Download repository:
-git clone https://github.com/vedees/webpack-template webpack-template
+git clone https://github.com/icid5post/webpack-boilerplate.git webpack-template
 
 # Go to the app:
 cd webpack-template
 
 # Install dependencies:
-npm install
+yarn install
 
 # Server with hot reload at http://localhost:8081/
 npm run dev
