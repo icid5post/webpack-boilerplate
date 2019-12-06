@@ -22,7 +22,6 @@ module.exports = {
     },
     output: {
         path: PATHS.dist,
-        publicPath: '/',
         filename: `${PATHS.assets}js/[name].[hash].js`,
     },
     optimization: {
